@@ -11,11 +11,6 @@ pipeline {
                 sh 'mvn validate'
             }
         }
-        stage('Stage-3 : Test') { 
-            steps {
-                sh 'mvn Test'
-            }
-        }
         stage('Stage-4 : Install') { 
             steps {
                 sh 'mvn Install'

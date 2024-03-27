@@ -16,27 +16,22 @@ pipeline {
                 sh 'mvn validate'
             }
         }
-        stage('Stage-4 : Compile') { 
-            steps {
-                sh 'mvn Compile'
-            }
-        }
-        stage('Stage-5 : Test') { 
+        stage('Stage-4 : Test') { 
             steps {
                 sh 'mvn Test'
             }
         }
-        stage('Stage-6 : Install') { 
+        stage('Stage-5 : Install') { 
             steps {
                 sh 'mvn Install'
             }
         }
-        stage('Stage-7 : Verify') { 
+        stage('Stage-6 : Verify') { 
             steps {
                 sh 'mvn Verify'
             }
         }
-        stage('Stage-8 : Package') { 
+        stage('Stage-7 : Package') { 
             steps {
                 sh 'mvn Package'
             }

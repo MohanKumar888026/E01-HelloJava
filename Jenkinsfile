@@ -11,32 +11,32 @@ pipeline {
                 sh 'mvn validate'
             }
         }
-        stage('Stage-2 : Validate') { 
+        stage('Stage-3 : Validate') { 
             steps {
                 sh 'mvn validate'
             }
         }
-        stage('Stage-2 : Compile') { 
+        stage('Stage-4 : Compile') { 
             steps {
                 sh 'mvn Compile'
             }
         }
-        stage('Stage-2 : Test') { 
+        stage('Stage-5 : Test') { 
             steps {
                 sh 'mvn Test'
             }
         }
-        stage('Stage-2 : Install') { 
+        stage('Stage-6 : Install') { 
             steps {
                 sh 'mvn Install'
             }
         }
-        stage('Stage-2 : Verify') { 
+        stage('Stage-7 : Verify') { 
             steps {
                 sh 'mvn Verify'
             }
         }
-        stage('Stage-2 : Package') { 
+        stage('Stage-8 : Package') { 
             steps {
                 sh 'mvn Package'
             }
